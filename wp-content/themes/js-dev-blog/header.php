@@ -12,7 +12,7 @@
 <body>
     <nav class="container navbar navbar-expand-lg" style="background-color: #ffffff;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="font-size: 40px; font-weight: 900">Js's it tech blog</a>
+            <a class="navbar-brand" href="#" style="font-size: 40px; font-weight: 900">Js's it tech blog!!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
