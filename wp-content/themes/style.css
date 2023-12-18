@@ -1,0 +1,14 @@
+/*
+Theme Name: Js's it tech blog
+Theme URI: http://localghos:6481/js-dev-blog
+Author: junsu
+Author URI: http://localghos:6481/js-dev-blog
+Description:
+Version: 1.0
+*/
+
+.form-control:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}
