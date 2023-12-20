@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container">
-    <div style="height: 300px; display: flex; align-content: center">
+    <div class="row items-justified-center" style="height: 300px;">
         <div>
             <div style="font-family: 'GmarketSansMedium'; font-size: 40px; color: #383838;">Story of</div>
             <div style="font-family: 'GmarketSansBold'; font-size: 40px; color: #383838;">Developer JS</div>
