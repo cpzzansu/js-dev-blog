@@ -4,7 +4,7 @@
         <div class="d-flex align-items-center">
             <div>
                 <div style="font-family: 'GmarketSansMedium'; font-size: 40px; color: #383838;">Story of</div>
-                <div style="font-family: 'GmarketSansBold'; font-size: 40px; color: #383838;">Developer JS</div>
+                <div style="font-family: 'GmarketSansBold'; font-size: 40px; color: #383838; margin-left: 40px">Developer JS</div>
             </div>
         </div>
     </div>
