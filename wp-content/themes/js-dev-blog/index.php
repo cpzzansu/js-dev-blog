@@ -8,6 +8,5 @@
             </div>
         </div>
     </div>
-    <h1 class="display-1" style="font-family: 'GmarketSansBold'">Hello, world!</h1>
 </div>
 <?php get_footer(); ?>
