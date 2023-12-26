@@ -19,3 +19,8 @@ Version: 1.0
     color: #383838;
     font-family: 'GmarketSansBold';
 }
+
+strong .title {
+    font-size: 22px;
+    font-weight: 700;
+}
