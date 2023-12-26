@@ -12,3 +12,7 @@ Version: 1.0
     border-color: transparent;
     box-shadow: none;
 }
+
+.red-color {
+    color: red;
+}
