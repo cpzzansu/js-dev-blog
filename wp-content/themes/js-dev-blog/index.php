@@ -11,14 +11,16 @@
         </div>
     </div>
     <?php
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
+    if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
 
-            <h1>hi</h1>
+            <a href="<?php the_permalink(); ?>">
+                <strong class="title"><?php the_title(); ?></strong>
+            </a>
 
-            <?php endwhile;
-        else: _e('Sorry, no posts found.');
-        endif;
+        <?php endwhile;
+    else: _e('Sorry, no posts found.');
+    endif;
     ?>
 
 </div>
