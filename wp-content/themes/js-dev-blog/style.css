@@ -13,6 +13,9 @@ Version: 1.0
     box-shadow: none;
 }
 
-.red-color {
-    color: red;
+.blog-logo-font {
+    font-size: 40px;
+    font-weight: 900;
+    color: #383838;
+    font-family: 'GmarketSansBold';
 }
