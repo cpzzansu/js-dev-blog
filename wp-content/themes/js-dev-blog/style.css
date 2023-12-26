@@ -22,5 +22,6 @@ Version: 1.0
 
 .title {
     font-size: 22px;
+    color: inherit;
     text-decoration: none;
 }
