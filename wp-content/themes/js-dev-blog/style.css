@@ -20,7 +20,7 @@ Version: 1.0
     font-family: 'GmarketSansBold';
 }
 
-.title {
+.title a{
     font-size: 22px;
     color: inherit;
     text-decoration: none;
