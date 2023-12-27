@@ -16,6 +16,7 @@
 
             <a href="<?php the_permalink(); ?>">
                 <strong class="title"><?php the_title(); ?></strong>
+                <p><?php echo mb_substr(strip_tags(get_the_content()),0,100) ?></p>
             </a>
 
         <?php endwhile;
