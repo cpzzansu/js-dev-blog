@@ -15,7 +15,7 @@
         while (have_posts()) : the_post(); ?>
 
             <a href="<?php the_permalink(); ?>">
-                <strong class="title mb-1"><?php the_title(); ?></strong>
+                <strong class="title mb-2"><?php the_title(); ?></strong>
                 <p><?php echo mb_substr(strip_tags(get_the_content()),0,100) ?></p>
             </a>
 
