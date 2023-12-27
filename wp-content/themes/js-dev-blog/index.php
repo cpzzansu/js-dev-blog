@@ -14,10 +14,11 @@
 	if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post(); ?>
-
-            <a class="mb-2" href="<?php the_permalink(); ?>">
-                <strong class="title"><?php the_title(); ?></strong>
-            </a>
+            <div class="mb-2">
+                <a href="<?php the_permalink(); ?>">
+                    <strong class="title"><?php the_title(); ?></strong>
+                </a>
+            </div>
             <a href="<?php the_permalink(); ?>">
                 <p><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
             </a>
