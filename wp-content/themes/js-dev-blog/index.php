@@ -20,7 +20,7 @@
                 </a>
             </div>
             <a href="<?php the_permalink(); ?>">
-                <p><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
+                <p class="substr"><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
             </a>
 
 		<?php endwhile;
