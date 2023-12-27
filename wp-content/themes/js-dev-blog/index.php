@@ -10,19 +10,22 @@
             </div>
         </div>
     </div>
-    <?php
-    if (have_posts()) :
-        while (have_posts()) : the_post(); ?>
+	<?php
+	if ( have_posts() ) :
+		while ( have_posts() ) :
+			the_post(); ?>
 
+            <a class="mb-2" href="<?php the_permalink(); ?>">
+                <strong class="title"><?php the_title(); ?></strong>
+            </a>
             <a href="<?php the_permalink(); ?>">
-                <strong class="title mb-2"><?php the_title(); ?></strong>
-                <p><?php echo mb_substr(strip_tags(get_the_content()),0,100) ?></p>
+                <p><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
             </a>
 
-        <?php endwhile;
-    else: _e('Sorry, no posts found.');
-    endif;
-    ?>
+		<?php endwhile;
+	else: _e( 'Sorry, no posts found.' );
+	endif;
+	?>
 
 </div>
 <?php get_footer(); ?>
