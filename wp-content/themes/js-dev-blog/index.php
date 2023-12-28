@@ -27,11 +27,13 @@
                 <p class="substr"><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
             </a>
 
-            <!-- 블로그 글 리스트 카테고리 -->
-            <p><?php the_category(', '); ?></p>
+            <div>
+                <!-- 블로그 글 리스트 카테고리 -->
+                <p><?php the_category( ', ' ); ?></p>
 
-            <!-- 블로그 글 리스트 등록 날짜 -->
-            <p><?php the_date(); ?></p>
+                <!-- 블로그 글 리스트 등록 날짜 -->
+                <p><?php the_date(); ?></p>
+            </div>
 
 		<?php endwhile;
 	else: _e( 'Sorry, no posts found.' );
