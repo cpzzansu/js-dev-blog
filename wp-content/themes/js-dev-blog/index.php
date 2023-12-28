@@ -27,12 +27,16 @@
                 <p class="substr"><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
             </a>
 
-            <div class="">
-                <!-- 블로그 글 리스트 카테고리 -->
-                <?php the_category( ', ' ); ?>
+            <div>
+                <div class="main-list-category">
+                    <!-- 블로그 글 리스트 카테고리 -->
+					<?php the_category( ', ' ); ?>
+                </div>
 
-                <!-- 블로그 글 리스트 등록 날짜 -->
-                <?php the_date(); ?>
+                <div class="main-list-date">
+                    <!-- 블로그 글 리스트 등록 날짜 -->
+					<?php the_date(); ?>
+                </div>
             </div>
 
 		<?php endwhile;

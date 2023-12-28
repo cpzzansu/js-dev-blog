@@ -32,3 +32,13 @@ a {
 .substr {
     color: #777777;
 }
+
+.main-list-category {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.main-list-date {
+    font-size: 14px;
+    color: #777777;
+}
