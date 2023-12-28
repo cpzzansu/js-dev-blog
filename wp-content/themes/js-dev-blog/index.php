@@ -10,39 +10,41 @@
             </div>
         </div>
     </div>
-	<?php
-	if ( have_posts() ) :
-		while ( have_posts() ) :
-			the_post(); ?>
+    <div class="col-md-6">
+		<?php
+		if ( have_posts() ) :
+			while ( have_posts() ) :
+				the_post(); ?>
 
-            <!-- 블로그 글 리스트 제목 -->
-            <div class="mb-2">
+                <!-- 블로그 글 리스트 제목 -->
+                <div class="mb-2">
+                    <a href="<?php the_permalink(); ?>">
+                        <strong class="title"><?php the_title(); ?></strong>
+                    </a>
+                </div>
+
+                <!-- 블로그 글 리스트 처음 내용 -->
                 <a href="<?php the_permalink(); ?>">
-                    <strong class="title"><?php the_title(); ?></strong>
+                    <p class="substr"><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
                 </a>
-            </div>
 
-            <!-- 블로그 글 리스트 처음 내용 -->
-            <a href="<?php the_permalink(); ?>">
-                <p class="substr"><?php echo mb_substr( strip_tags( get_the_content() ), 0, 100 ) ?></p>
-            </a>
+                <div class="d-flex">
+                    <div class="main-list-category">
+                        <!-- 블로그 글 리스트 카테고리 -->
+						<?php the_category( ', ' ); ?>
+                    </div>
 
-            <div class="d-flex">
-                <div class="main-list-category">
-                    <!-- 블로그 글 리스트 카테고리 -->
-					<?php the_category( ', ' ); ?>
+                    <div class="main-list-date">
+                        <!-- 블로그 글 리스트 등록 날짜 -->
+						<?php the_date(); ?>
+                    </div>
                 </div>
 
-                <div class="main-list-date">
-                    <!-- 블로그 글 리스트 등록 날짜 -->
-					<?php the_date(); ?>
-                </div>
-            </div>
-
-		<?php endwhile;
-	else: _e( 'Sorry, no posts found.' );
-	endif;
-	?>
+			<?php endwhile;
+		else: _e( 'Sorry, no posts found.' );
+		endif;
+		?>
+    </div>
 
 </div>
 <?php get_footer(); ?>
