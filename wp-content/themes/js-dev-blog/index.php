@@ -29,10 +29,10 @@
 
             <div class="d-flex row">
                 <!-- 블로그 글 리스트 카테고리 -->
-                <p><?php the_category( ', ' ); ?></p>
+                <?php the_category( ', ' ); ?>
 
                 <!-- 블로그 글 리스트 등록 날짜 -->
-                <p><?php the_date(); ?></p>
+                <?php the_date(); ?>
             </div>
 
 		<?php endwhile;
