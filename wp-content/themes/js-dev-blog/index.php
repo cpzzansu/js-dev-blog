@@ -15,6 +15,7 @@
 		$count_posts = wp_count_posts()->publish;
 		?>
         <div class="total-post">전체 글 <span class="posts-length-number"><?php echo $count_posts; ?></span></div>
+        <div class="border-1"></div>
 		<?php
 		if ( have_posts() ) :
 			while ( have_posts() ) :
