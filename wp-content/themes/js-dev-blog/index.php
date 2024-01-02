@@ -12,6 +12,10 @@
     </div>
     <div class="col-md-8">
 		<?php
+		$count_posts = wp_count_posts()->publish;
+		?>
+        <div>전체글 <?php echo $count_posts; ?></div>
+		<?php
 		if ( have_posts() ) :
 			while ( have_posts() ) :
 				the_post(); ?>
