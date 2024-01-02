@@ -42,3 +42,12 @@ a {
     font-size: 14px;
     color: #777777;
 }
+
+.total-post {
+    font-weight: 700;
+}
+
+.posts-length-number {
+    font-weight: 700;
+    color: #ef402f;
+}
